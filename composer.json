@@ -1,0 +1,29 @@
+{
+    "name": "lgy/composer_test2",
+    "description": "test",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "lgy",
+            "email": "18612192370@163.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {},
+    "autoload": {
+    	"psr-4": {
+        	"Lgy\\Test\\": "src/"
+       	}
+     },
+     "extra": {
+        "laravel": {
+            "providers": [
+                "Lgy\\Test\\TestServiceProvider"
+            ],
+            "aliases": {
+                "Test": "Lgy\\Test\\TestFacade"
+            }
+        }
+    }
+}
