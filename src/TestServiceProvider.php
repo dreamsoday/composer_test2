@@ -10,7 +10,7 @@ class TestServiceProvider extends ServiceProvider {
 
         $this->publishes([
             __DIR__.'/../config/test.php' => config_path('test.php'),
-        ], 'test');
+        ]);
     }
 
     public function register() {
